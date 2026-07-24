@@ -13,13 +13,18 @@ function HomePage() {
         }}
       >
         <Container maxWidth="lg">
-          <Box sx={{ width: 800 }}>
-            <Typography variant="overline" color="text.secondary">
-              Financial Management
-            </Typography>
-
+          <Box
+            sx={{
+              width: "100%",
+              maxWidth: 800,
+            }}
+          >
             <Typography variant="h1" sx={{ mt: 2 }}>
-              We make financial management simple.
+              با
+              <Box component="span" sx={{ color: "#666666", fontWeight: 600 }}>
+                تصمیم‌های مالی هوشمندانه،
+              </Box>
+              آینده‌ای مطمئن‌تر بسازید.
             </Typography>
 
             <Typography
@@ -30,17 +35,22 @@ function HomePage() {
                 maxWidth: 600,
               }}
             >
-              We help businesses and individuals understand, manage, and improve
-              their financial performance through simple and powerful solutions.
+              درود، به سایت مشاوره مالی پرژاد خوش آمدید. ما در پرژاد با ارائه
+              خدمات تخصصی مشاوره مالی و سرمایه‌گذاری، در مسیر مدیریت بهتر
+              دارایی‌ها و دستیابی به اهداف مالی در کنار شما هستیم. با بهره‌گیری
+              از تحلیل‌های تخصصی و استراتژی‌های متنوع سرمایه‌گذاری، از جمله
+              آربیتراژ، به شما کمک می‌کنیم تا فرصت‌های مالی را بهتر شناسایی کرده
+              و تصمیم‌های آگاهانه‌تری برای آینده خود بگیرید. هدف ما ارائه
+              راهکارهای متناسب با شرایط و اهداف مالی شماست.
             </Typography>
 
             <Box sx={{ display: "flex", gap: 2, mt: 5 }}>
               <Button component={Link} to="/services" variant="contained">
-                Explore Services
+                سرویس ها
               </Button>
 
               <Button component={Link} to="/about" variant="outlined">
-                About Us
+                درباره ما
               </Button>
             </Box>
           </Box>
