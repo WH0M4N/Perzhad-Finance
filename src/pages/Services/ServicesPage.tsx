@@ -4,11 +4,11 @@ function ServicesPage() {
   return (
     <Container maxWidth="lg">
       <Box sx={{ py: 12 }}>
-        <Typography variant="h1">Our Services</Typography>
+        <Typography variant="h1">سرویس های ما</Typography>
 
         <Typography variant="body1" color="text.secondary" sx={{ mt: 3 }}>
-          We provide financial management solutions designed to help you make
-          better financial decisions.
+          ما راهکارهای مدیریت مالی ارائه می‌دهیم که برای کمک به شما در اتخاذ
+          تصمیمات مالی بهتر طراحی شده‌اند.
         </Typography>
       </Box>
     </Container>

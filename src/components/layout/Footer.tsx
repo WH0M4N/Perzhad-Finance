@@ -6,47 +6,61 @@ function Footer() {
       component="footer"
       sx={{
         backgroundColor: "#F5F5F5",
-        mt: 10,
-        py: 8,
+        py: {
+          xs: 5,
+          md: 8,
+        },
       }}
     >
       <Container maxWidth="lg">
         <Box
           sx={{
             display: "grid",
+
             gridTemplateColumns: {
               xs: "1fr",
+              sm: "repeat(2, 1fr)",
               md: "2fr 1fr 1fr",
             },
-            gap: 5,
+
+            gap: {
+              xs: 4,
+              md: 5,
+            },
           }}
         >
           <Box>
             <Typography variant="h5" sx={{ fontWeight: 700 }}>
-              Finance
+              پرژاد
             </Typography>
 
-            <Typography color="text.secondary" sx={{ mt: 2, maxWidth: 350 }}>
-              Simple financial management solutions for better decisions and
-              better results.
+            <Typography
+              color="text.secondary"
+              sx={{
+                mt: 2,
+                maxWidth: 350,
+              }}
+            >
+              راهکارهای تخصصی برای مدیریت بهتر دارایی‌ها و تصمیم‌گیری‌های مالی
+              هوشمندانه.
             </Typography>
           </Box>
 
           <Box>
-            <Typography sx={{ fontWeight: 600 }}>Contact Us</Typography>
+            <Typography sx={{ fontWeight: 600 }}>تماس با ما</Typography>
 
             <Typography color="text.secondary" sx={{ mt: 2 }}>
-              +98 21 1234 5678
+              ۰۲۱-۱۲۳۴۵۶۷۸
             </Typography>
 
-            <Typography color="text.secondary">info@example.com</Typography>
+            <Typography color="text.secondary">info@parzhad.ir</Typography>
           </Box>
 
           <Box>
-            <Typography sx={{ fontWeight: 600 }}>Office</Typography>
+            <Typography sx={{ fontWeight: 600 }}>دفتر ما</Typography>
 
             <Typography color="text.secondary" sx={{ mt: 2 }}>
-              Tehran, Iran
+              تهران، ایران
             </Typography>
           </Box>
         </Box>
@@ -54,7 +68,7 @@ function Footer() {
         <Divider sx={{ my: 5 }} />
 
         <Typography variant="body2" color="text.secondary">
-          © 2026 Finance. All rights reserved.
+          © ۲۰۲۶ پرژاد. تمامی حقوق محفوظ است.
         </Typography>
       </Container>
     </Box>

@@ -4,7 +4,7 @@ function AboutPage() {
   return (
     <Container maxWidth="lg">
       <Box sx={{ py: 12 }}>
-        <Typography variant="h1">About Us</Typography>
+        <Typography variant="h1">درباه ما</Typography>
 
         <Typography
           variant="body1"
@@ -14,9 +14,11 @@ function AboutPage() {
             maxWidth: 700,
           }}
         >
-          We believe financial management should be clear, accessible, and
-          simple. Our goal is to help people and businesses make better
-          decisions with their money.
+          تیم مشاوره مالی ما متشکل از کارشناسان با تجربه و متخصص در زمینه‌های
+          مالی و سرمایه‌گذاری است. ما با سال‌ها تجربه در ارائه مشاوره مالی به
+          افراد و کسب‌وکارها، به شما کمک می‌کنیم تا به اهداف مالی خود برسید. ما
+          به اهمیت اعتماد و ارتباط نزدیک با مشتریان خود اعتقاد داریم و همواره در
+          تلاشیم تا بهترین خدمات را ارائه دهیم..
         </Typography>
       </Box>
     </Container>
