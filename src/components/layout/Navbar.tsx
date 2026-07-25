@@ -73,9 +73,9 @@ function Navbar() {
                 خانه
               </Button>
 
-              <Button component={Link} sx={{ color: "inherit" }} to="/services">
+              {/* <Button component={Link} sx={{ color: "inherit" }} to="/services">
                 خدمات
-              </Button>
+              </Button> */}
 
               <Button component={Link} sx={{ color: "inherit" }} to="/about">
                 درباره ما
@@ -91,10 +91,10 @@ function Navbar() {
                   },
                 }}
               >
-                درخواست مشاوره
+                شروع مشاوره
               </Button>
 
-              <Button
+              {/* <Button
                 disabled
                 sx={{
                   color: "#BDBDBD",
@@ -105,7 +105,7 @@ function Navbar() {
                 }}
               >
                 شروع همکاری
-              </Button>
+              </Button> */}
             </Box>
 
             {/* Mobile Menu Button */}
@@ -164,9 +164,9 @@ function Navbar() {
               <ListItemText primary="خانه" />
             </ListItemButton>
 
-            <ListItemButton component={Link} to="/services" onClick={closeMenu}>
+            {/* <ListItemButton component={Link} to="/services" onClick={closeMenu}>
               <ListItemText primary="خدمات" />
-            </ListItemButton>
+            </ListItemButton> */}
 
             <ListItemButton component={Link} to="/about" onClick={closeMenu}>
               <ListItemText primary="درباره ما" />
