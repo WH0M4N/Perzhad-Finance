@@ -73,16 +73,13 @@ function Navbar() {
                 خانه
               </Button>
 
-              {/* <Button component={Link} sx={{ color: "inherit" }} to="/services">
-                خدمات
-              </Button> */}
-
-              <Button component={Link} sx={{ color: "inherit" }} to="/about">
-                درباره ما
+              <Button component={Link} sx={{ color: "inherit" }} to="/articles">
+                مقالات
               </Button>
 
               <Button
                 disabled
+                component={Link}
                 sx={{
                   color: "#BDBDBD",
 
@@ -90,22 +87,14 @@ function Navbar() {
                     color: "#BDBDBD",
                   },
                 }}
+                to="/about"
               >
-                شروع مشاوره
+                درخواست مشاوره
               </Button>
 
-              {/* <Button
-                disabled
-                sx={{
-                  color: "#BDBDBD",
-
-                  "&.Mui-disabled": {
-                    color: "#BDBDBD",
-                  },
-                }}
-              >
-                شروع همکاری
-              </Button> */}
+              <Button component={Link} sx={{ color: "inherit" }} to="/about">
+                درباره ما
+              </Button>
             </Box>
 
             {/* Mobile Menu Button */}
