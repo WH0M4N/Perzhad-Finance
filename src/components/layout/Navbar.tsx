@@ -168,20 +168,34 @@ function Navbar() {
               <ListItemText primary="خانه" />
             </ListItemButton>
 
-            {/* <ListItemButton component={Link} to="/services" onClick={closeMenu}>
-              <ListItemText primary="خدمات" />
-            </ListItemButton> */}
-
-            <ListItemButton component={Link} to="/about" onClick={closeMenu}>
-              <ListItemText primary="درباره ما" />
+            <ListItemButton component={Link} to="/articles" onClick={closeMenu}>
+              <ListItemText primary="مقالات" />
             </ListItemButton>
 
-            <ListItemButton disabled>
+            <ListItemButton
+              disabled
+              sx={{
+                "&.Mui-disabled": {
+                  color: "#BDBDBD",
+                },
+              }}
+            >
               <ListItemText primary="درخواست مشاوره" />
             </ListItemButton>
 
-            <ListItemButton disabled>
-              <ListItemText primary="شروع همکاری" />
+            <ListItemButton
+              disabled
+              sx={{
+                "&.Mui-disabled": {
+                  color: "#BDBDBD",
+                },
+              }}
+            >
+              <ListItemText primary="آموزش" />
+            </ListItemButton>
+
+            <ListItemButton component={Link} to="/about" onClick={closeMenu}>
+              <ListItemText primary="درباره ما" />
             </ListItemButton>
           </List>
         </Box>
