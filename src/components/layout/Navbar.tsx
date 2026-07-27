@@ -92,6 +92,21 @@ function Navbar() {
                 درخواست مشاوره
               </Button>
 
+              <Button
+                disabled
+                component={Link}
+                sx={{
+                  color: "#BDBDBD",
+
+                  "&.Mui-disabled": {
+                    color: "#BDBDBD",
+                  },
+                }}
+                to="/about"
+              >
+                آموزش{" "}
+              </Button>
+
               <Button component={Link} sx={{ color: "inherit" }} to="/about">
                 درباره ما
               </Button>
