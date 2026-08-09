@@ -78,16 +78,9 @@ function Navbar() {
               </Button>
 
               <Button
-                disabled
                 component={Link}
-                sx={{
-                  color: "#BDBDBD",
-
-                  "&.Mui-disabled": {
-                    color: "#BDBDBD",
-                  },
-                }}
-                to="/about"
+                sx={{ color: "inherit" }}
+                to="/consultation"
               >
                 درخواست مشاوره
               </Button>
@@ -173,12 +166,9 @@ function Navbar() {
             </ListItemButton>
 
             <ListItemButton
-              disabled
-              sx={{
-                "&.Mui-disabled": {
-                  color: "#BDBDBD",
-                },
-              }}
+              component={Link}
+              to="/consultation"
+              onClick={closeMenu}
             >
               <ListItemText primary="درخواست مشاوره" />
             </ListItemButton>
