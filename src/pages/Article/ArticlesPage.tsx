@@ -244,21 +244,37 @@ function ArticlesPage() {
                       maxWidth: 850,
                     }}
                   >
-                    <Typography
+                    <Box
                       sx={{
                         fontSize: {
                           xs: "1rem",
                           md: "1.08rem",
                         },
-
                         lineHeight: 2.35,
-
                         color: "text.secondary",
                       }}
                     >
-                      {article.content}
-                    </Typography>
-
+                      {article.content
+                        .split(/\n\s*\n/)
+                        .map((paragraph, paragraphIndex) => (
+                          <Typography
+                            key={paragraphIndex}
+                            component="p"
+                            sx={{
+                              fontSize: "inherit",
+                              lineHeight: "inherit",
+                              color: "inherit",
+                              mb:
+                                paragraphIndex ===
+                                article.content.split(/\n\s*\n/).length - 1
+                                  ? 0
+                                  : 3,
+                            }}
+                          >
+                            {paragraph.trim()}
+                          </Typography>
+                        ))}
+                    </Box>
                     {/* Close */}
                     <Box
                       onClick={() => handleToggle(article.id)}
